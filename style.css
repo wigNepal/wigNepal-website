@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(12, 8, 65, 0.5)90%,rgba(12, 8, 65, 0.5)90%);
+    height: 100vh;
+}
+
+.navbar{
+    width: 100%;
+    height: 45px;
+    margin: auto;
+    background-color:rgb(3, 3, 78)
+}
+.header{
+    color:rgb(206, 206, 197);
+    font-family: sans-serif;
+    font-size: xx-large;
+    align-content: center;
+}
+.description{
+    color:rgb(241, 241, 235);
+    font-family: sans-serif;
+    font-size: large;
+    align-content: center;
+}
+.cover-image{
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://eos.com/wp-content/uploads/2020/11/geospatial-data-analysis.jpg.webp');
+}
+.cover-text{
+    width: 100%;
+    height: 10vh;
+    padding-top: 90px;
+    margin-left: 40px;
+}
+.cover-description-text{
+    width: 100%;
+    height: 20vh;
+    padding-top: 0px;
+    margin-left: 40px;
+}
