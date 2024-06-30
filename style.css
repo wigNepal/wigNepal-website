@@ -90,12 +90,13 @@
 .btn--primary-hover{
     margin-top: 20px;
     margin-left: 4px;
-    color: lightblue;
+    color: white;
     font-family: Helvetica;
     font-size: small;
     padding: 12px;
     border-radius: 6px;
     border-color: whitesmoke;
+    background-color: orange;
 }
 
 .tagline{
