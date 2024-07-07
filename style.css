@@ -15,6 +15,12 @@
     margin: auto;
     background-color:rgb(3, 3, 78)
 }
+.navbar-contents{
+    margin-top: 4px;
+    color: white;
+    align-content: center;
+    background-color:rgb(215, 18, 24);
+}
 .header{
     color:rgb(206, 206, 197);
     font-family: Helvetica;
