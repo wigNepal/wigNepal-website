@@ -3,8 +3,11 @@ from .forms import submissionForm
 from django.http import HttpResponse
 import os
 
+def homepage(request):
+    return render(request, 'index.html')
+
 # Create your views here.
-def index(request):
+def regform(request):
     if request.method == 'POST':
         form = submissionForm(request.POST)
         if form.is_valid():
@@ -12,7 +15,7 @@ def index(request):
             
     else:
         form = submissionForm()
-        return render(request, 'index.html',{'form':form})
+        return render(request, 'regform.html',{'form':form})
     
     
 # def success(request):
