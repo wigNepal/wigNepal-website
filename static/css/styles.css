@@ -74,59 +74,36 @@
     margin-left: 40px;
     
 }
-.btn--primary-dark{
-    margin-top: 20px;
-    margin-left: 4px;
-    color: black;
-    font-family: Helvetica;
-    font-size: small;
-    padding: 12px;
-    background-color: silver;
-    border-radius: 6px;
-    box-shadow: 2px;
-}
-.btn--primary-light{
-    margin-top: 20px;
-    margin-left: 300px;
-    color: white;
-    font-family: Helvetica;
-    font-size: small;
-    padding: 12px;
+.primary-button {
     background-color: darkblue;
-    border-radius: 6px;
-}
-.btn--primary-outline-container1{
-    margin-top: 20px;
-    margin-left: 4px;
-    color: black;
-    font-family: Helvetica;
-    font-size: small;
-    padding: 12px;
-    border-radius: 6px;
-    border-color: black;
-}
-.btn--primary-outline-container2{
-    margin-top: 20px;
-    margin-left: 4px;
-    color: black;
-    font-family: Helvetica;
-    font-size: small;
-    padding: 12px;
-    border-radius: 6px;
-    border-color: black;
-    display: inline-block;
-}
-.btn--primary-hover{
-    margin-top: 20px;
-    margin-left: 4px;
     color: white;
-    font-family: Helvetica;
-    font-size: small;
-    padding: 12px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
     border-radius: 6px;
-    border-color: whitesmoke;
-    background-color: orange;
+    margin: 20px 0px;
 }
+
+.primary-button:hover {
+    background-color: #2980b9;
+}
+
+.secondary-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 6px;
+    margin: 20px 0px;
+}
+
+.secondary-button:hover {
+    background-color: #c0392b;
+}
+
 
 .tagline{
     font-weight: bolder;
