@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+.form_container{
+    padding: 50px;
+    background-color: lightgrey;
+    
+}
+.form_box{
+    background-color: white;
+    border: 1px solid #120f0f;
+    padding: 50px;
+    /* text-align: center;  */
+    
+}
+.form_content_container{
+    color: black;
+    padding: 20px 400px;
+}
+.form {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.label {
+    flex: 1 1 30%; /* Adjust width of labels */
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="number"],
+select,
+textarea {
+    flex: 1 1 60%; /* Adjust width of input fields */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+textarea {
+    height: 100px; /* Set height for textarea */
+    
+}
+button[type="submit"] {
+    flex: 1 1 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

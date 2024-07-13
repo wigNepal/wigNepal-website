@@ -4,4 +4,4 @@ from .models import submission
 class submissionForm(forms.ModelForm):
     class Meta:
         model = submission
-        fields = ['name','email','phone_number']
+        fields = '__all__'

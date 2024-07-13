@@ -2,16 +2,119 @@
 <!DOCTYPE html>
 <head>
     <title>Registration Form</title>
+    <link rel="stylesheet" href="{% static 'css/regform.css' %}">
 </head>
 <body>
-    <h1>Become a member of Women in Geospatial Nepal</h1>
+    <h1><center>Become a member of Women in Geospatial Nepal</h1></center>
     <div>
-    <form id="register-form" method="post" action="{% url 'regform' %}" >
+        <div class = "form_container">
+            <div class = "form_box">
+                <div class = "form_content_container">
+                <form id="register-form" method="post" action="{% url 'regform' %}" >
 
-        {% csrf_token %}
+                    {% csrf_token %}
+                    
+                    {{form.as_p}}
+                    <button type ='submit'>Submit</button>
+                </form>
+                <!-- Since we are using django forms, we don't need to create form tags in HTML file for each form field -->
+                <!-- <form>
+                    <label for="full_name">Full Name:</label>
+                    <input type="text" id="full_name" name="full_name" required>
+                    <br><br>
 
-        {{form.as_p}}
-        <button type ='submit'>Submit</button>
-    </form>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+
+                    <label for="phone_number">Phone Number:</label>
+                    <input type="tel" id="phone_number" name="phone_number">
+                    <br><br>
+
+                    <label for="education_level">Education Level:</label>
+                    <select id="education_level" name="education_level">
+                        <option value="high_school">High School</option>
+                        <option value="undergraduate">Undergraduate</option>
+                        <option value="graduate">Graduate</option>
+                        <option value="postgraduate">Postgraduate</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <br><br>
+
+                    <label for="faculty">Faculty:</label>
+                    <input type="text" id="faculty" name="faculty">
+                    <br><br>
+
+                    <label for="institution_name">Education Institution Name:</label>
+                    <input type="text" id="institution_name" name="institution_name">
+                    <br><br>
+
+                    <label for="graduation_year">Graduation Year:</label>
+                    <input type="text" id="graduation_year" name="graduation_year">
+                    <br><br>
+
+                    <label for="occupation">Occupation:</label>
+                    <input type="text" id="occupation" name="occupation">
+                    <br><br>
+
+                    <label for="designation">Designation:</label>
+                    <input type="text" id="designation" name="designation">
+                    <br><br>
+
+                    <label for="organization_name">Professional Organization Name:</label>
+                    <input type="text" id="organization_name" name="organization_name">
+                    <br><br>
+
+                    <label for="organization_website">Website Link (Professional Organization):</label>
+                    <input type="url" id="organization_website" name="organization_website">
+                    <br><br>
+
+                    <label for="facebook">Facebook Link:</label>
+                    <input type="url" id="facebook" name="facebook">
+                    <br><br>
+
+                    <label for="linkedin">Linkedin Link:</label>
+                    <input type="url" id="linkedin" name="linkedin">
+                    <br><br>
+
+                    <label for="twitter">Twitter Link:</label>
+                    <input type="url" id="twitter" name="twitter">
+                    <br><br>
+
+                    <label for="instagram">Instagram Link:</label>
+                    <input type="url" id="instagram" name="instagram">
+                    <br><br>
+
+                    <label for="mentorship_participation">Have you participated in any mentorship program?</label>
+                    <select id="mentorship_participation" name="mentorship_participation">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                    <br><br>
+
+                    <label for="mentor_mentee">Do you want to be a mentor or mentee?</label>
+                    <select id="mentor_mentee" name="mentor_mentee">
+                        <option value="mentor">Mentor</option>
+                        <option value="mentee">Mentee</option>
+                    </select>
+                    <br><br>
+
+                    <label for="profile_picture">Profile Picture:</label>
+                    <input type="file" id="profile_picture" name="profile_picture">
+                    <br><br> -->
+
+                    <!-- <label for="expectations">What are your expectations from WiG Nepal?</label>
+                    <textarea id="expectations" name="expectations" rows="4"></textarea>
+                    <br><br>
+
+                    <label for="feedback">Any suggestions/feedbacks?</label>
+                    <textarea id="feedback" name="feedback" rows="4"></textarea>
+                    <br><br>
+
+                    <button type="submit">Submit</button>
+                </form> -->
+                </div>
+            </div>
+        </div>
     </div>
 </body>
