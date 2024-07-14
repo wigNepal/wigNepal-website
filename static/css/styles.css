@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    color: black;
 }
 
 :root {
@@ -33,32 +32,35 @@
     height: 70vh;
 }
 
-
-.navbar-content{
-    align-content: center;
+.navbar-content{   
     display: flex;   
-    padding: 0 20px; 
-    margin: 0 auto;
-    justify-content: space-between;
-}
-.navbar-content-link{
+    justify-content: space-evenly;
     color: var(--text-color-secondary);
-    text-decoration: none;
-    padding-right: 10px;
     align-items: center;
 }
-.social-media-link{
-    display: flex;
-    margin-left: 20px;
-    height: 45px;
-    width: 100%;
-    align-items: center;
+.navbar-content-element{
+    text-decoration: none;
+    padding-right: 20px;  
+    color: inherit;
     
 }
-.social-media-links i {
-    color: var(--text-color-secondary);
-    text-decoration: none;
-    padding-right: 20px;
+.social-media-link{
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center;  
+    margin-right: auto;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+
+.other-link{
+    display: flex; 
+    justify-content: flex-end;   
+    align-items: center;
+    margin-left: auto;
+    padding-right: 40px;
+    padding-top: 20px;
 }
 
 .header{
