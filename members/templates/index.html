@@ -17,7 +17,7 @@
                     </div>
                     <div class = "other-link">
                         <a class="navbar-content-element" href="#">Home</a>
-                        <a class="navbar-content-element" href="#">About</a>
+                        <a class="navbar-content-element" href="{% url 'about' %}">About</a>
                         <a class="navbar-content-element" href="#">Contact</a>
                     </div>
                 </div>
@@ -39,12 +39,21 @@
                 <p class="description-light2">Join in the cohort of geospatial enthusiasts in Nepal</p>
                 <button id="btnRegistration2" class = "primary-button">Register here</button>
             </div>
-            <div>
-                <div>Upcoming Events</div>
-                <div>
-                    
+            <div class="event-container">
+                <div class="section-header">
+                    Upcoming Events
                 </div>
-
+                <div class ="event-box">
+                <div>
+                    <p>Image</p>
+                </div>
+                <div>
+                    <div>Event Title</div>
+                    <div>Event Date</div>
+                    <div>Event Description</div>>
+                    <button class = "secondary-button">Read more</button>
+                </div>
+                </div>
 
             </div>          
             

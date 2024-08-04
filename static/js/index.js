@@ -8,6 +8,7 @@ function toggleForm() {
     window.open('regform', '_blank');
 }
 
+
 // function toggleForm() {
 //     var form = document.getElementById('register-form');
 //     if (form.style.display === 'none') {

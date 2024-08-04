@@ -17,7 +17,9 @@ def regform(request):
         form = submissionForm()
         return render(request, 'regform.html',{'form':form})
     
-    
+def about(request):
+    return render(request, 'about.html')
+
 # def success(request):
     # # Load your separate success HTML file
     # html_file_path = os.path.join('html', 'success.html')

@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    color: black;
 }
 .form_container{
     padding: 50px;
@@ -14,6 +13,21 @@
     padding: 50px;
     /* text-align: center;  */
     
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height:100%;
+}
+
+.container-level1{
+    background-color: var(--background-color-primary) ;
+    height: 20px;
+}
+.container-level2{
+    background-color: var(--background-color-secondary) ;
+    height: 20px;
 }
 .form_content_container{
     color: black;
